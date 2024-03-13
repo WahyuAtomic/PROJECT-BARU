@@ -1,6 +1,17 @@
-body {
+* {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.fa {
+  color: #33ccff;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,5 +41,243 @@ body {
 }
 
 .container .navbar .logo .logoname {
-  font-size: 18px;
+  font-size: 18pxs;
+  margin-left: 0.5em;
+  text-shadow: 1px 1px 1px rgba(16, 16, 16, 0.1),
+    1px 2px 1px rgba(16, 16, 16, 0.1), 1px 3px 1px rgba(16, 16, 16, 0.1),
+    1px 4px 1px rgba(16, 16, 16, 0.1), 1px 5px 1px rgba(16, 16, 16, 0.1);
 }
+
+.container .navbar .logo img {
+  border-radius: 50%;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.container .navbar .time-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .navbar .time-period .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  border-radius: 8px;
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffffff;
+}
+
+.container .navbar .time-period .select div {
+  margin: 8px;
+}
+
+.container .navbar .time-period .select div .fa {
+  margin: 0 5px;
+}
+
+.container .navbar .time-period .select span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.container .navbar .time-period .custom select {
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffffff;
+}
+
+.container-body {
+  grid-template-columns: 18% auto;
+}
+
+.container-body .sidebar {
+  margin: 10px 0 0 20px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+.container-body .sidebar ul li {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.container-body .sidebar ul li a {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.container-body .sidebar ul li .fa {
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.container-body .sidebar ul .dropdown a {
+  margin: 5px 0;
+  text-transform: capitalize;
+  color: #000;
+  padding: 8px;
+  padding-left: 40px;
+}
+
+.container-body .sidebar ul .dropdown #dash {
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  border-radius: 14px;
+}
+
+.container-body .sidebar ul .profile {
+  position: relative;
+  top: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  border-radius: 12px;
+}
+
+.container-body .sidebar ul .profile img {
+  border-radius: 50%;
+}
+
+.container-body .sidebar ul .profile .name {
+  margin: 3px 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.container-body .sidebar ul .profile .username {
+  color: #808080;
+  margin: 2px 0;
+}
+
+.container-body .sidebar ul .profile a {
+  margin: 5px;
+  text-transform: capitalize;
+  color: #0060cc;
+}
+
+/*SIDEBAR CSS AND*/
+
+.container-body .main-body .title {
+  padding: 15px;
+  margin: 0 20px;
+}
+
+.container-body .main-body .title .greet {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.container-body .main-body .title h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.container-body .title .container-body .main-body .cards {
+  display: grid;
+  grid-template-rows: 120px auto;
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+.container-body .main-body .cards .row .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+/*ROW-1 CSS*/
+
+.container-body .main-body .cards .row-1 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+}
+
+.container-body .main-body .cards .row-1 .three {
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3spx #ffffff;
+}
+
+.container-body .main-body .cards .row-1 .card .logo {
+  padding: 20px 24px;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3spx #ffffff;
+}
+
+.container-body .main-body .cards .row-1 .card .logo .fa {
+  font-size: 30px;
+}
+
+.container-body .main-body .cards .row-1 .card .content {
+  margin-left: 1em;
+}
+
+.container-body .main-body .cards .row-1 .card .content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.container-body .main-body .cards .row-1 .card .content a {
+  font-size: 12px;
+  color: #33ccff;
+}
+
+/*ROW-1 CSS END*/
+
+/*ROW-2 CSS*/
+
+.container-body .main-body .cards .row-2 .chart {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 14px;
+  box-shadow: inset 2px 2px 2px #cbced1, inset -2px -2px 2px #ffffff;
+}
+
+/*ROW-2 CSS END*/
+
+/*ROW-3 CSS*/
+
+.container-body .main-body .cards .row-3 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+}
+
+.container-body .main-body .cards .row-3 .card {
+  height: 80px;
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3spx #ffffff;
+}
+
+.container-body .main-body .cards .row-3 .card .logo {
+  padding: 20px 25px;
+}
+
+.container-body .main-body .cards .row-3 .card .logo .fa {
+  font-size: 28px;
+}
+
+.container-body .main-body .cards .row-3 .card .content h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-body .main-body .cards .row-3 .card .content h1 {
+} /*ROW-3 CSS END*/
