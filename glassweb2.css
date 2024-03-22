@@ -251,6 +251,241 @@ body {
   box-shadow: inset 2px 2px 2px #cbced1, inset -2px -2px 2px #ffffff;
 }
 
+.chart .status {
+  position: absolute;
+  top: 1.5em;
+  left: 1.8em;
+}
+
+.chart .status span {
+  padding: 6px 15px;
+  margin: 0.5em;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 2px #cbced1, inset -2px -2px 2px #ffffff;
+}
+
+.chart ul {
+  position: absolute;
+  bottom: 2.2em;
+  left: 1em;
+}
+
+.chart ul li {
+  padding: 0.5em 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.chart .box {
+  position: relative;
+}
+
+.chart .box li {
+  position: absolute;
+  top: 6.25em;
+  left: 5em;
+  width: 25px;
+  height: 110px;
+  border-radius: 8px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+.chart .box li:nth-child(1) {
+  left: 7em;
+}
+.chart .box li:nth-child(2) {
+  left: 14em;
+}
+.chart .box li:nth-child(3) {
+  left: 21em;
+}
+.chart .box li:nth-child(4) {
+  left: 28em;
+}
+.chart .box li:nth-child(5) {
+  left: 35em;
+}
+.chart .box li:nth-child(6) {
+  left: 42em;
+}
+.chart .box li:nth-child(7) {
+  left: 49em;
+}
+
+.chart .box li .text {
+  position: absolute;
+  bottom: -2.5em;
+  left: -0.5em;
+  width: 80px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.chart .box li .bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #33ccff;
+  border-radius: 6px;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+.chart .box li .bar1 {
+  animation: bar1 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar1 {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 10%;
+  }
+  50% {
+    height: 15%;
+  }
+  75% {
+    height: 60%;
+  }
+  100% {
+    height: 40%;
+  }
+}
+.chart .box li .bar2 {
+  animation: bar2 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar2 {
+  0% {
+    height: 80;
+  }
+  25% {
+    height: 20%;
+  }
+  50% {
+    height: 25%;
+  }
+  75% {
+    height: 80%;
+  }
+  100% {
+    height: 60%;
+  }
+}
+.chart .box li .bar3 {
+  animation: bar3 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar3 {
+  0% {
+    height: 40;
+  }
+  25% {
+    height: 10%;
+  }
+  50% {
+    height: 75%;
+  }
+  75% {
+    height: 30%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+.chart .box li .bar4 {
+  animation: bar4 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar4 {
+  0% {
+    height: 100%;
+  }
+  25% {
+    height: 10%;
+  }
+  50% {
+    height: 15%;
+  }
+  75% {
+    height: 10%;
+  }
+  100% {
+    height: 55%;
+  }
+}
+.chart .box li .bar5 {
+  animation: bar5 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar5 {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 10%;
+  }
+  50% {
+    height: 15%;
+  }
+  75% {
+    height: 50%;
+  }
+  100% {
+    height: 80%;
+  }
+}
+.chart .box li .bar6 {
+  animation: bar6 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar6 {
+  0% {
+    height: 60;
+  }
+  25% {
+    height: 55;
+  }
+  50% {
+    height: 45;
+  }
+  75% {
+    height: 20;
+  }
+  100% {
+    height: 45;
+  }
+}
+.chart .box li .bar7 {
+  animation: bar7 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bar7 {
+  0% {
+    height: 80;
+  }
+  25% {
+    height: 50%;
+  }
+  50% {
+    height: 35%;
+  }
+  75% {
+    height: 70%;
+  }
+  100% {
+    height: 30%;
+  }
+}
+
 /*ROW-2 CSS END*/
 
 /*ROW-3 CSS*/
@@ -280,4 +515,5 @@ body {
 }
 
 .container-body .main-body .cards .row-3 .card .content h1 {
+  padding: auto;
 } /*ROW-3 CSS END*/
